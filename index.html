@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>EasyOps</title>
+<meta name="description" content="EasyOps Documentation">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png" alt="iDocs Template"/> </a> 
+		<span class="text-2 ml-2">v1.0</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="social-icons-facebook"><a data-toggle="tooltip" href="https://www.youtube.com/@brain.h" target="_blank" title="" data-original-title="Youtube"><i class="fab fa-youtube"></i></a></li>
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_installation">Installation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">Basics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_sass">Errors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_color_schemes">Contribution</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_theme_customization">Support</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_layout">Panels</a>
+          <ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#idocs_header">EasyUtils</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_navbar">EasyOps</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_sidebar">EasyScripts</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_footer">QuickMenu</a></li>
+          </ul>
+        </li>
+      
+		<li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+          </ul>
+		</li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>EasyOps V1.0</h1>
+        <p class="lead">by AsianMario</p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong>Version:</strong> 1.0</li>
+					<li><strong>Author:</strong> <a href="https://github.com/asian-mario" target="_blank">Rangga Gunarto (@AsianMario)</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong class="font-weight-700">Latest Version:</strong> V1.1</li>
+					<li><strong>Update:</strong> 11/12/2024</li>
+				</ul>
+			</div>
+		</div>
+        <p>The Easy Utils & EasyOps Blender addon provides a suite of tools to simplify common 3D modeling tasks, including material management, geometry cleanup, UV unwrapping, and more. This documentation covers the features, functionality, and how to use them.</p>
+        <br>
+        <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="mailto:bytebend.studio@gmail.com">Email</a>.</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Installation
+		============================ -->
+        <section id="idocs_installation">
+          <h2>Installation</h2>
+          <p class="lead">Follow the steps to install the addon quickly and seamlessly</p>
+          <ol>
+            <li>Head to the GitHub Repo <a href="https://github.com/asian-mario/EasyOps" target="_blank">here</a></li>
+            <li>Head to the releases tab and download the latest version as a .zip file.
+            <ul>
+			<li><code>EasyOps-Stable</code> - Contains all addon versions
+			  <ul>
+                <li><code>.../2.93</code> - 2.93 Version of EasyOps. The most stable version.</li>
+                <li><code>.../3.xx</code> - EasyOps version that supports Blender 3.xx</li>
+                <li><code>.../4.xx</code> - EasyOps version that supports Blender 4.xx</li>
+                <li><code>.../README.md</code> - README file which will provide extra information.</li>
+              </ul>
+			</li>
+			<li><code>HTML/index.html</code> - Homepage
+			</ul>
+            </li>
+            <li>Open your respective Blender version. Edit > Preferences > Addons > Install. Select the Addon version which corresponds with your Blender version.</li>
+            <li>Enjoy!</li>
+          </ol>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- HTML Structure
+		============================ -->
+        <section id="idocs_html_structure">
+          <h2>Troubleshooting</h2>
+          <p>After installing the addons, turning on the addon may lead to a message which outputs an error message.<br><br>
+            If you have downloaded the addon from the releases tab it is unlikely to be the structure of the addon, instead double check that the version you have loaded into Blender is the correct version, 2.93 EasyOps will not load at all into 3.xx or 4.xx versions. Although, 3.xx and 4.xx versions will most likely work interchably with eachother but issues may occur when using some functions.</p> 
+          <p class="alert alert-info">If you need more help feel free to contact the email <a target="_blank" href="mailto:bytebend.studio@gmail.com">here!</a></p>
+        </section>
+        
+		<hr class="divider">
+		        
+		<!-- Sass
+		============================ -->
+        <section id="idocs_sass">
+          <h2>Known Errors</h2>
+          <p>While I may give you the illusion of competency, there are some known issues in EasyOps V1.0. Feel free to report any more to the issues above or submit a pull requrest on the repository.</p>
+          <ul>
+            <li><code>MESH</code> - Ensure you do not apply <code>smart apply</code> function on any non MESH object, this will crash Blender.</li>
+            <li><code>BOOLEAN</code> - If more than 2 objects are selected and a boolean is applied, only the first two are applied while the third either causes a crash or does nothing. Further testing and development may allow stacked boolean operations.</li>
+            <li><code>MATERIALS</code> - When applying random materials to an object, the object's viewport display colour is supposed to take the same color as its diffuse, for some reason this does not work on ANY version.</li>
+            <li><code>UNDO</code> - Sometimes, when undoing a boolean operation it will not return to its previous state. To fix this, do not select an object while undoing after a boolean operation. Fix will come soon.</li>
+          </ul>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Color Schemes
+		============================ -->
+        <section id="idocs_color_schemes">
+          <h2>Contribution</h2>
+          <p>As this is an open-source project, please feel free to contribute to to the <a href="https://github.com/asian-mario/EasyOps" target="_blank">repo.</a> Any pull requests will be reviewed and accepted if it contributes to the project, or e-mail me to start a discussion!</p>
+          <br>
+          <p>If you do decide to contribute, please ensure you are developing for the right version! The API changes very frequently.</p>
+
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Customization
+		============================ -->
+        <section id="idocs_theme_customization">
+          <h2>Support</h2>
+          <p>If you <bold>like</bold> this addon please consider supporting! Either by helping develop the repository or buying me a coffee!</p>
+          <ul>
+            <li><code>PayPal</code> - <a href="https://paypal.me/asianmario01" target="_blank">Here</a></li>
+            <li><code>Ethereum</code> - <code>0xA546b622Ac695B9c0F3905D37844A8d12Aa48CEc</code></li>
+          </ul>
+
+        
+		<hr class="divider">
+		
+		<!-- Layout
+		============================ -->
+        <section id="idocs_layout">
+          <h2>EasyOps Panels</h2>
+          <p class="lead mb-5">This section goes through in detail the panels, functions and their usages.</p>
+        </section>
+		
+		
+        <!-- Header
+		============================ -->
+        <section id="idocs_header">
+          <h2>EasyUtils</h2>
+          <p>EasyUtils is part of the entire EasyOps package and allows users to do meticolous tasks in an easy click.</p>
+          
+          <ul>
+            <li><code>Rename</code> - A lazy rename function which appends a number from 1 to <code>n</code> after the prefix set by the user, this can be all the objects within the 3D viewport or a selected group, this case is especially useful for those who have a workflow which requires each mesh to be split into submeshes due to tris restrictions or for a simple naming scheme.</li>
+            <li><code>SSharpen</code> - Smart Sharpen is a sharpen feature which automataically adds a bevel modifier and smartly applies sharps and seams when appropriate, additionally applies an auto-smooth.</li>
+            <li><code>Random Materials [WIP]</code> - Either a selection of objects or all the objects in the scene can either be applied a random metallic material on each object or a random flat coloured material.</li>
+            <li><code>Smart UV Unwrap</code> - Essentially a shortcut to the Smart UV Unwrap, allows to edit the island margin before applying the function.</li>
+            <li><code>Smooth</code> - Basic smoothness setting options, what you would essentially find in the various panels of Blender but all in one place.</li>
+            <li><code>Remove Doubles</code> - Removes any double vertices within a mesh which may occur post boolean operations.</li>
+          </ul>
+          
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Navbar
+		============================ -->
+        <section id="idocs_navbar">
+          <h2>EasyOps</h2>
+		  <p class="lead">EasyOps is a dedicated part of the package for boolean operations, which allows for easy manipulation of booleans. Additionally, in EasyOps the boolean effector is automatically sorted into a new collection and changed into a wireframe view in order to see the effect of the boolean on the object. Furthermore, it makes it much easier for boolean effectors to be boolean objects thenselves.</p>
+		  <p><a class="popup-img" href="assets/images/example.png"><img class="img-fluid border" src="assets/images/example.png" height="250px" width="250px" alt=""></a></p>
+      <h4>Bevel and Boolean Operations</h4>
+      <ul>
+        <li><code>Bevel</code> - Adds a Bevel modifier in one click, it opens the modifier controls in the same panel for easy access.</li>
+        <li><code>Boolean Difference</code> - To use this function, first click the object you want to cut into and then <code>SHIFT + LMB</code> the effector which will be the cutter, then either click on the button in the panel of hit <code>LSHIFT + Z</code> (explored in another section) to open the quick menu and click on the difference boolean to cut into a new object. The effector will be placed into a new collection for easy cleanup.</li>
+        <li><code>Boolean Union</code> - To use this function, first click the object you want to merge into and then <code>SHIFT + LMB</code> the effector which will be the merging object which will take the modifier of its original object, then either click on the button in the panel of hit <code>LSHIFT + Z</code> (explored in another section) to open the quick menu and click on the union modifier to merge the two objects together. The effector will be placed into a new collection for easy cleanup.</li>
+        <li><code>Boolean Intersect</code> - To use this function, first click the object you want to act as a intersection boundary and then <code>SHIFT + LMB</code> and click Boolean Intersect, the effector which will then be the boundary which will create a resultant object which is the intersection between the two objects or either type <code>LSHIFT + Z</code> (explored in another section) to open the quick menu and click on the intersect modifier to create a new object from the intersect between two objects. The effector will be placed into a new collection for easy cleanup.</li>
+      </ul>
+      <h4>Modifiers & Cleanup</h4>
+      <ul>
+        <li><code>Smart Decimate</code> - An easy to use decimate function to reduce tris/poly counts of an object, once an object is selected and smart decimate is applied, the modifier controls will appear at the bottom of the panel.</li>
+        <li><code>Flat Shading</code> - As the name suggests, an easy one-click solution to turn any model to a flat-shaded style model similar to low-poly style objects.</li>
+        <li><code>Clean Geometry</code> - Cleans the geometry by removing double vertices, merged faces and irregular normals.</li>
+        <li><code>Smart Apply</code> - Applies all EasyOps BOOLEANS (will be expanded to all Blender modifiers) in the correct order to ensure that there are no conflicts.</li>
+      </ul>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Sidebar
+		============================ -->
+        <section id="idocs_sidebar">
+          <h2>EasyScripts</h2>
+          <p class="lead">EasyScripts is an add-on which is not part of the EasyUtils-core addon, this allows users to write their own scripts in the scripting tab inside Blender and loads it within EasyScripts.</p>
+          <ul>
+            <li><code>Adding New Scripts</code> - Open the <code>scripting</code> tab in Blender and write the script you would like to add, click on the arrow at the right side of the editor and open the EasyScripts panel and name the script and add it.</li>
+            <li><code>Using Scripts</code> - In the 3D Viewport open the EasyScripts panel and click on the drop down to select the script you want to execute and press run script.</li>
+            <li><code>Removing/Editing Scripts</code> - In the 3D Viewport EasyScripts tab, select the script you would like to edit or delete and click on the edit/remove button. If the user clicks on the edit button the current script will be loaded into the <code>Scripting</code> window which can be edited and saved.</li>
+          </ul>
+		</section>
+		
+		<hr class="divider">
+		
+        <!-- Footer
+		============================ -->
+        <section id="idocs_footer">
+          <h2>QuickMenu</h2>
+          <p class="lead">QuickMenu is an easy way to access EasyOps/Utils functions without opening the tab.</p>
+          <h4>Non-Boolean Operations</h4>
+          <p>When selecting an object and typing <code>LSHIFT + Z</code>, it brings up the radial menu with the following functions</p>
+          <ul>
+            <li><code>Bevel</code></li>
+            <li><code>Smart UV Unwrap</code></li>
+            <li><code>Sharpen</code></li>
+          </ul>
+
+          <h4>Boolean Operations</h4>
+          <p>When selecting two objects and typing <code>LSHIFT + Z</code> it brings up the Boolean QuickMenu which allows the following functions to be accessed quickly.</p>
+          <ul>
+            <li><code>Union</code></li>
+            <li><code>Intersect</code></li>
+            <li><code>Difference</code></li>
+          </ul>
+        </section>
+        
+		
+		<hr class="divider">
+		
+        <!-- Changelog
+		============================ -->
+		
+        <section id="idocs_changelog">
+          <h2>Changelog</h2>
+          <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest versions. </p>
+          
+		  <h3 id="v1-1">Version 1.1 <small class="text-muted">(Dec, 2024)</small></h3>
+          <ul class="changelog">
+            <li><span class="badge badge-success">Added</span> QuickMenu</li>
+            <li><span class="badge badge-danger">Fixed</span> Remove Doubles in 3.xx & 4.xx causes crashes.</li>
+            <li><span class="badge badge-danger">Fixed</span> Smart UV no longer crashes when unwrapping multiple objects.</li>
+			<li><span class="badge badge-danger">Fixed</span> Crash on intersect boolean.</li>
+            <li><span class="badge badge-info">Updated</span> Change Smart Sharp edge-definition methods</li>
+			<li><span class="badge badge-info">Updated</span> WIP Smart Materials</li>
+          </ul>
+		  
+		  <hr class="divider">
+		  
+          <h3 id="v1-0">Version 1.0 <small class="text-muted">(Nov, 2024)</small></h3>
+          <p>Initial Release</p>
+        </section>        
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="http://www.github.com/asian-mario" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2024. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">AsianMario/Rangga Gunarto</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
