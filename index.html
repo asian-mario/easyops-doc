@@ -139,11 +139,13 @@
             <li>Head to the GitHub Repo <a href="https://github.com/asian-mario/EasyOps" target="_blank">here</a></li>
             <li>Head to the releases tab and download the latest version as a .zip file.
             <ul>
-			<li><code>EasyOps-Stable</code> - Contains all addon versions
+			<li><code>EasyOps (Releases)</code> - Contains all addon versions
 			  <ul>
-                <li><code>.../2.93</code> - 2.93 Version of EasyOps. The legacy version which EasyOps was originally developed on.</li>
-                <li><code>.../4.xx</code> - EasyOps version that supports Blender 4.xx versions, the most stable version with the most up-to-date features</li>
+                <li><code>.../EasyOps-2.93</code> - 2.93 Version of EasyOps. The legacy version which EasyOps was originally developed on.</li>
+                <li><code>.../EasyOps-Neutron</code> - EasyOps version that supports Blender versions from Blender 4.1 and below, not the most stable or up to date, will receive minimal support.</li>
+                <li><code>.../EasyOps-Proton</code> - The latest EasyOps version for Blender 4.1-4.5+, contains the most up-to-date features and is the most stable with constant updates.</li>
                 <li><code>.../README.md</code> - README file which will provide extra information.</li>
+                <li><code>.../CONTRIBUTION.md</code> - A file to inform developers how to get involved with the project.</li>
               </ul>
 			</li>
 			</ul>
@@ -160,8 +162,8 @@
         <section id="basics">
           <h2>Troubleshooting</h2>
           <p>After installing the addons, activating the addon may lead to a message which outputs an error message.<br><br>
-            If you have downloaded the addon from the releases tab it is unlikely to be the structure of the addon, instead double check that the version you have loaded into Blender is the correct version, 2.93 EasyOps will not load at all into the 4.xx version due to API differnces.
-            Furthermore, this is the same for the opposite, as 4.xx EasyOps will not load into the 2.93 version of Blender.
+            If you have downloaded the addon from the releases tab it is unlikely to be the structure of the addon, instead double check that the version you have loaded into Blender is the correct version, 2.93 EasyOps will not load at all into the 4.xx version of Blender due to API differnces.
+            Furthermore, this is the same for the opposite, as EasyOps Neutron or Proton will not load into the 2.93 version of Blender.
           </p> 
           <p class="alert alert-info">If you need more help feel free to contact the email <a target="_blank" href="mailto:bytebend.studio@gmail.com">here!</a></p>
         </section>
@@ -172,18 +174,10 @@
 		============================ -->
         <section id="known_errors">
           <h2>Known Errors</h2>
-          <p>There are some known issues in EasyOps as it is an extremely early build which has been picked up and revived. Please do report any issues in the repository 
-            <span><a href="https://github.com/asian-mario/EasyOps/issues" target="_blank">here.</a></span> If you wish to help the project, please do so by contributing to the codebase and creating a pull request.</p>
+          <p>There are some known issues in EasyOps as it is an extremely early build, issues and PR's can be opened for BOTH Neutron and Proton versions of EasyOps. Please do report any issues in the repository 
+            <span><a href="https://github.com/asian-mario/EasyOps/issues" target="_blank">here.</a></span> If you wish to help the project, please do so by contributing to the codebase and creating a pull request or opening an issue.</p>
           </p>
-          <ul>
-            <li><code>BOOLEAN</code> - If more than 2 objects are selected and a boolean is applied, only the first two are applied while the third either causes a crash or does nothing. Further testing and development may allow stacked boolean operations.</li>
-          </ul>
-          <p>Recently Resolved: </p>
-          <ul>
-            <li><code>MESH</code> - Ensure you do not apply <code>Smart Apply</code> function on any non MESH object, this will crash Blender.</li>
-            <li><code>MATERIALS</code> - When applying random materials to an object, the object's viewport display colour is supposed to take the same color as its diffuse, for some reason this does not work on ANY version.</li>
-            <li><code>UNDO</code> - Sometimes, when undoing a boolean operation it will not return to its previous state. To fix this, do not select an object while undoing after a boolean operation. Fix will come soon.</li>
-          </ul>
+
         </section>
         
 		<hr class="divider">
@@ -222,9 +216,9 @@
           <ul>
             <li><code>Rename</code> - A lazy rename function which appends a number from 1 to <code>n</code> after the prefix set by the user, this can be all the objects within the 3D viewport or a selected group, this case is especially useful for those who have a workflow which requires each mesh to be split into submeshes due to tris restrictions or for a simple naming scheme.</li>
             <li><code>SSharpen [WIP]</code> - Smart Sharpen is a sharpen feature which automataically adds a bevel modifier and smartly applies sharps and seams when appropriate, additionally applies an auto-smooth.</li>
-            <li><code>Random Materials [WIP]</code> - Either a selection of objects or all the objects in the scene can either be applied a random metallic material on each object or a random flat coloured material.</li>
+            <li><code>Random Materials </code> - Either a selection of objects or all the objects in the scene can either be applied a random metallic material on each object or a random flat coloured material.</li>
             <li><code>Smart UV Unwrap</code> - Essentially a shortcut to the Smart UV Unwrap, allows to edit the island margin before applying the function.</li>
-            <li><code>Smooth</code> - Basic smoothness setting options, what you would essentially find in the various panels of Blender but all in one place.</li>
+            <li><code>Smooth</code> - Basic smoothness setting options, what you would essentially find in the various panels of Blender but all in one place, brings back pre-4.1 AutoSmooth changes.</li>
             <li><code>Remove Doubles</code> - Removes any double vertices within a mesh which may occur post boolean operations.</li>
           </ul>
           
@@ -239,7 +233,11 @@
           <ul>
             <li><code>Bevel</code></li>
             <li><code>Smart UV Unwrap</code></li>
-            <li><code>Sharpen</code></li>
+            <li><code>SSharpen</code></li>
+            <li><code>Clean Geometry</code></li>
+            <li><code>Assign Random Materials</code></li>
+            <li><code>Smart Apply</code></li>
+            <li><code>Remove Doubles</code></li>
           </ul>
 
           <h4>Boolean Operations</h4>
@@ -248,6 +246,7 @@
             <li><code>Union</code></li>
             <li><code>Intersect</code></li>
             <li><code>Difference</code></li>
+            <li><code>FreeForm Booleans</code></li>
           </ul>
         </section>
         
@@ -255,7 +254,7 @@
 	
         <section id="easyops">
           <h2>EasyOps</h2>
-		  <p class="lead">EasyOps is a dedicated part of the package for boolean operations, which allows for easy manipulation of booleans. Additionally in EasyOps, the boolean effector is automatically sorted into a new collection and changed into a wireframe view in order to see the effect of the boolean on the object. Furthermore, it makes it much easier for boolean effectors to be boolean objects thenselves.</p>
+		  <p class="lead">EasyOps is a dedicated part of the package for boolean operations, which allows for easy manipulation of booleans. Additionally in EasyOps, the boolean effector is automatically sorted into a new collection and changed into a wireframe view in order to see the effect of the boolean on the object. Furthermore, it makes it much easier for boolean effectors to be boolean objects thenselves. See a showcase <span><a href="https://youtu.be/XIrRFUdbaYY" target="_blank">here.</a></span></p>
 		  <p><a class="popup-img" href="assets/images/operations.gif"><img class="img-fluid border" src="assets/images/operations.gif" height="500px" width="500px" alt=""></a></p>
 
       <h4>Bevel and Boolean Operations</h4>
@@ -264,6 +263,24 @@
         <li><code>Boolean Difference</code> - To use this function, first click the object you want to cut into and then <code>SHIFT + LMB</code> the effector which will be the cutter, then either click on the button in the panel or hit <code>QuickMenu</code> to open the quick menu and click on the difference boolean to cut into a new object. The effector will be placed into a new collection for easy cleanup.</li>
         <li><code>Boolean Union</code> - To use this function, first click the object you want to merge into and then <code>SHIFT + LMB</code> the effector which will be the merging object which will take the modifier of its original object, then either click on the button in the panel or hit <code>QuickMenu</code>  to open the quick menu and click on the union modifier to merge the two objects together. The effector will be placed into a new collection for easy cleanup.</li>
         <li><code>Boolean Intersect</code> - To use this function, first click the object you want to act as a intersection boundary and then <code>SHIFT + LMB</code> and click Boolean Intersect, the effector which will then be the boundary which will create a resultant object which is the intersection between the two objects or either type <code>QuickMenu</code>  to open the quick menu and click on the intersect modifier to create a new object from the intersect between two objects. The effector will be placed into a new collection for easy cleanup.</li>
+      </ul>
+      <h4>FreeForm Booleans</h4>
+      <p>FreeForm Booleans is a new feature which allows you to draw out your own booleans without creating a new mesh as your boolean effector. Furthermore, FreeForm Booleans can effect more than one object simultaneously in one operation.</p>
+      <ul>
+        <li><code>FreeForm Union</code> - Allows you to draw out a union boolean, this will create a new mesh which will be the union of the drawn shape and the object selected.</li>
+        <li><code>FreeForm Difference</code> - Allows you to draw out a difference boolean, this will create a new mesh which will be the difference of the drawn shape and the object selected.</li>
+        <li><code>FreeForm Intersect</code> - Allows you to draw out an intersect boolean, this will create a new mesh which will be the intersection of the drawn shape and the object selected.</li>
+      </ul>
+      <p>These are the following controls for FreeForm Booleans</p>
+      <ul>
+        <li><code>LMB</code> - Allows you to place a point</li>
+        <li><code>RMB & Drag</code> - Allows you to change the depth of your FF Boolean</li>
+        <li><code>C</code> - Allows for free camera navigation, toggle it to switch between drawing and camera mode</li>
+        <li><code>X</code> - Locks your points to be on a specific axis</li>
+        <li><code>Shift</code> - Allows you to turn off the default increment and snap.</li>
+        <li><code>ESC</code> - Cancel an operation.</li>
+        <li><code>Z</code> - Undo a point plot.</li>
+        <li><code>ENTER</code> - Finish drawing and apply boolean.</li>
       </ul>
       <h4>Modifiers & Cleanup</h4>
       <ul>
